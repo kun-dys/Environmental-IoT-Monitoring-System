@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mqttClass</class>
+ <widget class="QWidget" name="mqttClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>892</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mqtt</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>321</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Connection</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditHost">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Username:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Host:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Port:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Password:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEditUser">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEditPassword">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEditPort">
+        <property name="text">
+         <string>1883</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" rowspan="4">
+       <widget class="QPushButton" name="buttonConnect">
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>70</y>
+     <width>401</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Subscriptions</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Topic:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditTopic">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonSubscribe">
+        <property name="text">
+         <string>Subscribe</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>150</y>
+     <width>401</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Control</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="buttonOpen">
+        <property name="text">
+         <string>开始采集</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonStop">
+        <property name="text">
+         <string>停止采集</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>70</y>
+     <width>171</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>MQTT_message</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="message">
+        <property name="text">
+         <string>No messages!</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_6">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>250</y>
+     <width>441</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>View_temp</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QChartView" name="graphicsView_temp"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_7">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>250</y>
+     <width>451</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>View_humi</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QChartView" name="graphicsView_humi"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>891</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>基于MQTT的环境监测物联网系统</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonConnect</sender>
+   <signal>clicked()</signal>
+   <receiver>mqttClass</receiver>
+   <slot>connectMQTT()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>272</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonSubscribe</sender>
+   <signal>clicked()</signal>
+   <receiver>mqttClass</receiver>
+   <slot>subscribeTopic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>664</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>mqttClass</receiver>
+   <slot>publishStart()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>432</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonStop</sender>
+   <signal>clicked()</signal>
+   <receiver>mqttClass</receiver>
+   <slot>publishStop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>613</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>connectMQTT()</slot>
+  <slot>subscribeTopic()</slot>
+  <slot>publishStart()</slot>
+  <slot>publishStop()</slot>
+ </slots>
+</ui>
