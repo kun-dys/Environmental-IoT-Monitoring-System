@@ -2,7 +2,6 @@
 
 #include <QtWidgets/QWidget>
 #include "ui_mqtt.h"
-
 #include <QtMqtt/qmqttclient.h>
 #include <QDebug>
 #include <QtCharts/QLineSeries>
@@ -19,7 +18,6 @@ public:
     void onDisconnected();
     void onMessageReceived(const QByteArray &message, const QMqttTopicName &topic);
     void initChart();
-    void updateChart();
 private slots:
     void connectMQTT();
     void subscribeTopic();
@@ -36,7 +34,6 @@ private:
     QChart* humiChart;
     QLineSeries* tempSeries;
     QLineSeries* humiSeries;
-    QTimer* timer;
     double xValue = 0;
     bool is_start = false;
 };
