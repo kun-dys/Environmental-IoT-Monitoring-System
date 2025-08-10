@@ -6,14 +6,14 @@
 #include <stdbool.h>
 
 // MQTT ÅäÖÃ
-#define ESP32_WIFI_SSID     "OnePlus"
-#define ESP32_WIFI_PASS     "15966944488"
+#define ESP32_WIFI_SSID     "******"
+#define ESP32_WIFI_PASS     "******"
 
 #define MQTT_BROKER         "broker.emqx.io"
 #define MQTT_PORT           1883
 #define MQTT_CLIENT_ID      "stm32_client_test"
-#define MQTT_USERNAME       "kundys"
-#define MQTT_PASSWORD       "liuyaokun1028"
+#define MQTT_USERNAME       "******"
+#define MQTT_PASSWORD       "******"
 #define MQTT_TOPIC_PUB      "stm32topic"
 
 // º¯ÊýÉùÃ÷
